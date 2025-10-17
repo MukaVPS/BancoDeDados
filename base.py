@@ -7,4 +7,4 @@ print(df)
 
 # Limpeza de dados
 
-# União de base dados
+# Visualização
