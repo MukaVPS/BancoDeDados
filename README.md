@@ -1,4 +1,4 @@
-# Link Banco de dados
+# BIG DATA EM PYTHON - Manipulação de dados na área de Jogos digitais
 https://www.kaggle.com/code/lusfernandotorres/vendas-de-jogos-de-videogames/input
 
 
