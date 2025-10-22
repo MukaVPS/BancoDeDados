@@ -1,4 +1,4 @@
-# BIG DATA EM PYTHON: Manipulação de dados na área de Jogos digitais
+# BIG DATA EM PYTHON: Manipulação de Dados na área de Jogos digitais
 https://www.kaggle.com/code/lusfernandotorres/vendas-de-jogos-de-videogames/input
 
 
