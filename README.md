@@ -18,7 +18,7 @@ Fonte BD: [Kaggle.com](https://www.kaggle.com/code/lusfernandotorres/vendas-de-j
 
 <summary>Partindo disso, desenvolvemos os seguintes objetivos:</summary>
 
-### Auxiliar empresas e usuários a entenderem o contexto mais aamplo
+### Auxiliar empresas e usuários a entenderem o contexto mais amplo (...)
 
 
 ```ruby
