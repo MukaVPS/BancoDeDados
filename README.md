@@ -4,9 +4,6 @@ Fonte BD: [Kaggle.com](https://www.kaggle.com/code/lusfernandotorres/vendas-de-j
 
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
 
-
-<details>
-<summary>## Sobre os Dados coletados</summary>
 ## Sobre os Dados
 |  O dataset contém mais de 10 mil jogos com: |
 |------------------------------------------------|
