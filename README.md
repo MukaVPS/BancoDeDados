@@ -5,8 +5,8 @@ Fonte BD: [Kaggle.com](https://www.kaggle.com/code/lusfernandotorres/vendas-de-j
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
 
 ## Sobre os Dados
-### O dataset contém mais de 10 mil jogos com:
-
+| ### O dataset contém mais de 10 mil jogos com: |
+|------------------------------------------------|
 | _Nomes dos jogos e plataformas_ |
 | _Anos de lançamento e gêneros_ |  
 | _Publicadoras e vendas por região_ |
