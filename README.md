@@ -12,6 +12,8 @@ Fonte BD: [Kaggle.com](https://www.kaggle.com/code/lusfernandotorres/vendas-de-j
 | _Publicadoras e vendas por região_ |
 | _Rankings de vendas globais_ |
 
+
+
 <details>
 
-<summary>OBJETIVOS DO PROJETO</summary>
+<summary>Objetivo do projeto</summary>
