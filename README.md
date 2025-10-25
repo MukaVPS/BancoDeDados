@@ -18,14 +18,11 @@ Fonte BD: [Kaggle.com](https://www.kaggle.com/code/lusfernandotorres/vendas-de-j
 
 <summary>Partindo disso, desenvolvemos os seguintes objetivos:</summary>
 
-### You can add a header
+### Auxiliar empresas e usuários a entenderem o contexto mais aamplo
 
-You can add text within a collapsed section.
-
-You can add an image or a code block, too.
 
 ```ruby
-   puts "Hello World"
+   puts "Projeto em construção. Tenha paciencia, amigo(a)!"
 ```
 
 </details>
