@@ -16,4 +16,4 @@ Fonte BD: [Kaggle.com](https://www.kaggle.com/code/lusfernandotorres/vendas-de-j
 
 <details>
 
-<summary>Objetivo do projeto</summary>
+<summary>Partindo disso, desenvolvemos os seguintes objetivos:</summary>
