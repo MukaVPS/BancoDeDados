@@ -10,7 +10,7 @@ Fonte BD: [Kaggle.com](https://www.kaggle.com/code/lusfernandotorres/vendas-de-j
 | _Nomes dos jogos e plataformas_ |
 | _Anos de lançamento e gêneros_ |  
 | _Publicadoras e vendas por região_ |
-| _Rankings de vendas globais_ |
+| _Rankings de vendas globais_ |     
 
 
 
