@@ -11,3 +11,7 @@ Fonte BD: [Kaggle.com](https://www.kaggle.com/code/lusfernandotorres/vendas-de-j
 | _Anos de lançamento e gêneros_ |  
 | _Publicadoras e vendas por região_ |
 | _Rankings de vendas globais_ |
+
+<details>
+
+<summary>OBJETIVOS DO PROJETO</summary>
