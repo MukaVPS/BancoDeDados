@@ -1,4 +1,8 @@
 # BIG DATA EM PYTHON: Manipulação de Dados na Área de Jogos Digitais a nível Global
+### Projeto desenvolvido para a disciplina 'Tópicos de Big Data em Python' no Centro Universitário Estácio do Recife  
+### Orientado por ***Maria Renay***
+
+
 Fonte BD: [Kaggle.com](https://www.kaggle.com/code/lusfernandotorres/vendas-de-jogos-de-videogames/input)
 
 
