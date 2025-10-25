@@ -6,7 +6,7 @@ Fonte BD: [Kaggle.com](https://www.kaggle.com/code/lusfernandotorres/vendas-de-j
 
 
 <details>
-<summary>Tips for collapsed sections</summary>
+<summary>## Sobre os Dados coletados</summary>
 ## Sobre os Dados
 |  O dataset contém mais de 10 mil jogos com: |
 |------------------------------------------------|
