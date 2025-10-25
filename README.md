@@ -7,7 +7,7 @@ Fonte BD: [Kaggle.com](https://www.kaggle.com/code/lusfernandotorres/vendas-de-j
 ## Sobre os Dados
 ### O dataset contém mais de 10 mil jogos com:
 
-_Nomes dos jogos e plataformas_  
-_Anos de lançamento e gêneros_    
-_Publicadoras e vendas por região_    
-_Rankings de vendas globais_    
+| _Nomes dos jogos e plataformas_ |
+| _Anos de lançamento e gêneros_ |  
+| _Publicadoras e vendas por região_ |
+| _Rankings de vendas globais_ |
