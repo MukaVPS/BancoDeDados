@@ -16,7 +16,7 @@ Fonte BD: [Kaggle.com](https://www.kaggle.com/code/lusfernandotorres/vendas-de-j
 
 <details>
 
-<summary>Partindo disso, desenvolvemos os seguintes objetivos:</summary>
+<summary>Partindo disso, desenvolvemos o seguinte objetivo:</summary>
 
 ### Auxiliar empresas e usuários a entenderem o contexto mais amplo (...)
 
