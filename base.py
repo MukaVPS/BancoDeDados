@@ -10,8 +10,8 @@ top10 = df.sort_values('Global_Sales', ascending=False).head(10)
 # Top 10 por vendas globais com as Menores pontuações
 top10_negative = df.sort_values('Global_Sales', ascending=True).head(10)
 
-# Pontuação Total dos Gêneros dos jogos
-gen = df.groupby('Genre')['Global_Sales'].sum()
+# Vendas Globais de cada empresa de jogos
+Publisher = df.groupby('Publisher')['Global_Sales'].sum()
 
 # Limpeza de dados - removendo anos faltantes
 df_clean = df.dropna(subset=['Year'])
