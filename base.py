@@ -57,8 +57,6 @@ top10_anos_vendas = jogos_por_ano.sort_values(ascending=False).head(10)
 
 # Vendas por década
 vendas_por_decada = df_clean.groupby('Decada')['Global_Sales'].sum()
-print("\nVendas por década:")
-print(vendas_por_decada)
 
 # Evolução temporal dos gêneros
 
