@@ -2,7 +2,7 @@
 import pandas as pd
 
 # Base de dados
-df = pd.read_csv('vgsales.csv'))
+df = pd.read_csv('vgsales.csv')
 
 # Top 10 por vendas globais
 top10 = df.sort_values('Global_Sales', ascending=False).head(10)
