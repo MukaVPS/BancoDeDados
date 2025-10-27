@@ -13,6 +13,9 @@ top10_negative = df.sort_values('Global_Sales', ascending=True).head(10)
 # Vendas Globais de cada empresa de jogos
 Publisher = df.groupby('Publisher')['Global_Sales'].sum()
 
+# Top 5 empresas com as maiores vendas
+Publishertop5 = df.groupby('Publisher')['Global_Sales'].sum().sort_values(ascending=False).head(5)
+
 # Limpeza de dados - removendo anos faltantes
 df_clean = df.dropna(subset=['Year'])
 df_clean['Year'] = df_clean['Year'].astype(int)
