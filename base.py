@@ -66,7 +66,7 @@ top3_generos = vendas_por_genero.head(3)
 print(f"\n→ Top 3 gêneros mais lucrativos: {', '.join(top3_generos.index)}")
 
 # Top 10 anos com mais vendas
-top10_anos_vendas = vendas_por_ano.sort_values(ascending=False).head(10)
+top10_anos_vendas = jogos_por_ano.sort_values(ascending=False).head(10)
 print("Top 10 anos com mais vendas:")
 print(top10_anos_vendas)
 
