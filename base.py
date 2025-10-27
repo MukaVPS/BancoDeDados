@@ -14,7 +14,7 @@ top10_negative = df.sort_values('Global_Sales', ascending=True).head(10)
 publisher = df.groupby('Publisher')['Global_Sales'].sum()
 
 # Top 5 empresas com as maiores vendas
-publishertop5 = df.groupby('Publisher')['Global_Sales'].sum().sort_values(ascending=False).head(5)
+publishertop5 = publisher.sort_values(ascending=False).head(5)
 
 # Limpeza de dados - removendo anos faltantes
 df_clean = df.dropna(subset=['Year'])
