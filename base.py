@@ -40,7 +40,7 @@ vendas_por_regiao = {
 vendas_df = pd.DataFrame(list(vendas_por_regiao.items()), 
                         columns=['Região', 'Vendas (Milhões)'])
 
-# Região com mais vendas
+# Região com mais vendas (Falta.csv)
 regiao_mais_vendas = max(vendas_por_regiao, key=vendas_por_regiao.get)
 
 # Tendência de gênero de jogos mais lucrativos
@@ -51,7 +51,7 @@ vendas_por_genero = df.groupby('Genre')['Global_Sales'].sum().sort_values(ascend
 # Vendas médias por gênero
 vendas_medias_por_genero = df.groupby('Genre')['Global_Sales'].mean().sort_values(ascending=False)
 
-# Top 3 gêneros mais lucrativos
+# Top 3 gêneros mais lucrativos (Falta.csv)
 top3_generos = vendas_por_genero.head(3)
 
 # Top 10 anos com mais vendas
@@ -62,7 +62,7 @@ vendas_por_decada = df_clean.groupby('Decada')['Global_Sales'].sum()
 
 # Evolução temporal dos gêneros
 
-# Gêneros mais populares por década
+# Gêneros mais populares por década (Falta.csv)
 for decada in sorted(df_clean['Decada'].unique()):
     dados_decada = df_clean[df_clean['Decada'] == decada]
     genero_mais_popular = dados_decada.groupby('Genre')['Global_Sales'].sum().idxmax()
