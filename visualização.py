@@ -3,23 +3,8 @@ import matplotlib.pyplot as plt
 import os
 import sys
 
-# Pega o caminho da pasta onde o script está rodando
-script_dir = os.path.dirname(os.path.abspath(__file__))
-
-# Nome do arquivo CSV
-csv_file = "vgsales.csv"
-
-# Caminho completo
-csv_path = os.path.join(script_dir, csv_file)
-
-# Verifica se o CSV existe
-if not os.path.isfile(csv_path):
-    print(f"❌ Arquivo '{csv_file}' não encontrado na mesma pasta do script!")
-    print(f"📂 Coloque o arquivo aqui: {script_dir}")
-    sys.exit(1)
-
 # Carregar a base de dados
-df = pd.read_csv(csv_path)
+df = pd.read_csv('vgsales.csv')
 
 # Exibir informações gerais
 print("Informações gerais:")
