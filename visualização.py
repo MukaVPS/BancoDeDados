@@ -5,6 +5,8 @@ import sys
 
 # Carregar a base de dados
 df = pd.read_csv('vgsales.csv')
+top_10_mais = pd.read_csv('top10_vendas_globais.csv')
+top_10_menos = pd.read_csv('top10_menores_vendas_globais.csv')
 
 # Exibir informações gerais
 print("Informações gerais:")
@@ -23,12 +25,6 @@ colunas = ["Name", "Platform", "Genre", "Publisher",
             "NA_Sales", "EU_Sales", "JP_Sales", "Other_Sales", "Global_Sales"]
 
 df = df[colunas].dropna()
-
-# ----------------------------
-# 🔹 Top 10 mais e menos vendidos
-# ----------------------------
-top_10_mais = df.sort_values(by="Global_Sales", ascending=False).head(10)
-top_10_menos = df.sort_values(by="Global_Sales", ascending=True).head(10)
 
 # ----------------------------
 # 🔹 Criar figura com subplots (3x2)
