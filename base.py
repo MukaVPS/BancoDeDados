@@ -4,6 +4,10 @@ import pandas as pd
 # Base de dados
 df = pd.read_csv('vgsales.csv')
 
+# Limpeza de dados - removendo anos faltantes
+df_clean = df.dropna(subset=['Year'])
+df_clean['Year'] = df_clean['Year'].astype(int)
+
 # Top 10 por vendas globais
 top10 = df.sort_values('Global_Sales', ascending=False).head(10)
 
@@ -15,10 +19,6 @@ publisher = df.groupby('Publisher')['Global_Sales'].sum()
 
 # Top 5 empresas com as maiores vendas
 publishertop5 = publisher.sort_values(ascending=False).head(5)
-
-# Limpeza de dados - removendo anos faltantes
-df_clean = df.dropna(subset=['Year'])
-df_clean['Year'] = df_clean['Year'].astype(int)
 
 # Por ano
 jogos_por_ano = df_clean['Year'].value_counts().sort_index()
