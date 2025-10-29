@@ -27,7 +27,7 @@ jogos_por_ano = df_clean['Year'].value_counts().sort_index()
 df_clean['Decada'] = (df_clean['Year'] // 10) * 10
 jogos_por_decada = df_clean['Decada'].value_counts().sort_index()
 
-# Região com mais compra de jogos (Falta.csv)
+# Região com mais compra de jogos
 vendas_por_regiao = {
     'América do Norte': df['NA_Sales'].sum(),
     'Europa': df['EU_Sales'].sum(),
