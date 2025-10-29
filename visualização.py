@@ -1,1 +1,2 @@
-# O código da visualização será immplementado aqui.
+# Bíbliotecas
+import pandas as pd
