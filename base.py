@@ -1,12 +1,11 @@
-# Bíbliotecas
 import pandas as pd
 
 # Base de dados
 df = pd.read_csv('vgsales.csv')
 
-# Limpeza de dados - removendo anos faltantes
-df_clean = df.dropna(subset=['Year'])
-df_clean['Year'] = df_clean['Year'].astype(int)
+# Limpeza de dados: removendo anos faltantes
+df_clean = df.dropna(subset=['Year']).copy()
+df_clean.loc[:, 'Year'] = df_clean['Year'].astype(int)
 
 # Top 10 por vendas globais
 top10 = df.sort_values('Global_Sales', ascending=False).head(10)
@@ -24,7 +23,7 @@ publishertop5 = publisher.sort_values(ascending=False).head(5)
 jogos_por_ano = df_clean['Year'].value_counts().sort_index()
 
 # Por década
-df_clean['Decada'] = (df_clean['Year'] // 10) * 10
+df_clean.loc[:, 'Decada'] = (df_clean['Year'] // 10) * 10
 jogos_por_decada = df_clean['Decada'].value_counts().sort_index()
 
 # Região com mais compra de jogos
