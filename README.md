@@ -4,6 +4,7 @@
 
 
 Fonte BD: [Kaggle.com](https://www.kaggle.com/code/lusfernandotorres/vendas-de-jogos-de-videogames/input)
+Relatório do Projeto: [GoogleDocs](https://docs.google.com/document/d/191dB7rl4rPMGfMonsqsxc8EeBO4Jp5qTMl7lbUp2Vn4/edit?usp=sharing)
 
 
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
