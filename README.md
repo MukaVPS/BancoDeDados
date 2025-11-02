@@ -3,7 +3,7 @@
 ### Orientado por ***Maria Renay***
 
 
-Fonte BD: [Kaggle.com](https://www.kaggle.com/code/lusfernandotorres/vendas-de-jogos-de-videogames/input)
+Fonte BD: [Kaggle.com](https://www.kaggle.com/code/lusfernandotorres/vendas-de-jogos-de-videogames/input) |
 Relatório do Projeto: [GoogleDocs](https://docs.google.com/document/d/191dB7rl4rPMGfMonsqsxc8EeBO4Jp5qTMl7lbUp2Vn4/edit?usp=sharing)
 
 
