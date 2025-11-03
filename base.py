@@ -10,7 +10,6 @@ df_clean.loc[:, 'Year'] = df_clean['Year'].astype(int)
 # Top 10 por vendas globais
 top10 = df.sort_values('Global_Sales', ascending=False).head(10)
 
-# Top 10 por vendas globais com as Menores pontuações
 top10_negative = df.sort_values('Global_Sales', ascending=True).head(10)
 
 # Vendas Globais de cada empresa de jogos
