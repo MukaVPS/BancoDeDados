@@ -62,6 +62,28 @@ def vendas_por_regiao():
     plt.ylabel("Vendas (milhões)")
     plt.show()
 
+    
+def jogos_ano():
+    jogos_por_ano.plot(figsize=(8,6), x='Year', y='Número de Jogos', kind='bar', color='teal')
+    plt.title("Jogos por Ano")
+    plt.xlabel("Anos")
+    plt.ylabel("Quantidade Jogos")
+    plt.show()
+
+def jogos_decada():
+    jogos_por_decada.plot(figsize=(8,6), x='Decada', y='Número de Jogos', kind='bar', color='teal')
+    plt.title("Jogos por Década")
+    plt.xlabel("Décadas")
+    plt.ylabel("Quantidade Jogos")
+    plt.show()
+
+def top3_mais_lucrativos():
+    top3_generos_mais_lucrativos.plot(figsize=(8,6), x='Genre', y='Global_Sales', kind='bar', color='teal')
+    plt.title("Top 3 Gêneros Mais Lucrativos")
+    plt.xlabel("Gêneros")
+    plt.ylabel("Vendas")
+    plt.show()
+
 # Carregar bases de dados
 top10 = pd.read_csv('top10_vendas_globais.csv')
 top10negative = pd.read_csv('top10_menores_vendas_globais.csv')
@@ -71,6 +93,9 @@ generos = pd.read_csv('vendas_por_genero.csv')
 generos_medias = pd.read_csv('vendas_medias_por_genero.csv')
 decadas = pd.read_csv('vendas_por_decada.csv')
 regioes = pd.read_csv('vendas_por_regiao.csv')
+jogos_por_ano = pd.read_csv('jogos_por_ano.csv')
+jogos_por_decada = pd.read_csv('jogos_por_decada.csv')
+top3_generos_mais_lucrativos = pd.read_csv('top3_generos_mais_lucrativos.csv')
 
 # Interface
 windows = tk.Tk()
@@ -104,6 +129,15 @@ botao_decada.pack(pady=5)
 
 botao_regiao = tk.Button(windows, text="Vendas por Região", width=40, command=vendas_por_regiao)
 botao_regiao.pack(pady=5)
+
+botao_jogos_ano = tk.Button(windows, text="Jogos por Ano", width=40, command=jogos_ano)
+botao_jogos_ano.pack(pady=5)
+
+botao_jogos_decada = tk.Button(windows, text="Jogos por Década", width=40, command=jogos_decada)
+botao_jogos_decada.pack(pady=5)
+
+botao_top3_generos = tk.Button(windows, text="Top 3 Generos Mais Lucrativos.csv", width=40, command=top3_mais_lucrativos)
+botao_top3_generos.pack(pady=5)
 
 # Executar Interface
 windows.mainloop()
