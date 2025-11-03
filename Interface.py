@@ -2,9 +2,11 @@ import pandas as pd
 import tkinter as tk
 import matplotlib.pyplot as plt
 
+plt.style.use('ggplot')
 # Funções para exibir gráficos
 def top10_vendas_globais():
-    top10.plot(figsize=(10,6), x='Name', y='Global_Sales', kind='bar', color='green')
+    top10.plot(figsize=(15,8), x='Name', y='Global_Sales', kind='bar', legend=False, color='#00FF00')
+    plt.xticks(rotation=45, ha='right') 
     plt.title("Top 10 Jogos Mais Vendidos (Global)")
     plt.subplots_adjust(bottom=0.35)
     plt.xlabel("Jogo")
@@ -12,7 +14,8 @@ def top10_vendas_globais():
     plt.show()
 
 def top10_menores_vendas_globais():
-    top10negative.plot(figsize=(10,6), x='Name', y='Global_Sales', kind='bar', color='red')
+    top10negative.plot(figsize=(10,6), x='Name', y='Global_Sales', kind='bar', color='#FF0000')
+    plt.xticks(rotation=45, ha='right') 
     plt.title("Top 10 Jogos com Menores Vendas Globais")
     plt.subplots_adjust(bottom=0.35)
     plt.xlabel("Jogo")
@@ -20,7 +23,8 @@ def top10_menores_vendas_globais():
     plt.show()
 
 def top5_empresas():
-    top5empresas.plot(figsize=(10,6), x='Publisher', y='Global_Sales', kind='bar', color='orange')
+    top5empresas.plot(figsize=(10,6), x='Publisher', y='Global_Sales', kind='bar', color='#00FFFF')
+    plt.xticks(rotation=45, ha='right') 
     plt.title("Top 5 Empresas com Maiores Vendas")
     plt.xlabel("Empresa")
     plt.ylabel("Vendas Globais (milhões)")
@@ -28,35 +32,40 @@ def top5_empresas():
     plt.show()
 
 def top10_anos_vendas():
-    top10anos.plot(figsize=(10,6), x='Year', y='Número de Jogos', kind='bar', color='purple')
+    top10anos.plot(figsize=(10,6), x='Year', y='Número de Jogos', kind='bar', color='#FFCC00')
+    plt.xticks(rotation=45, ha='right') 
     plt.title("Top 10 Anos com Maiores Vendas")
     plt.xlabel("Ano")
     plt.ylabel("Vendas Globais (milhões)")
     plt.show()
 
 def vendas_por_genero():
-    generos.plot(figsize=(10,6), x='Genre', y='Vendas Totais (Milhões)', kind='bar', color='blue')
+    generos.plot(figsize=(10,6), x='Genre', y='Vendas Totais (Milhões)', kind='bar', color='#FF66FF')
+    plt.xticks(rotation=45, ha='right') 
     plt.title("Vendas Totais por Gênero")
     plt.xlabel("Gênero")
     plt.ylabel("Vendas Globais (milhões)")
     plt.show()
 
 def vendas_medias_por_genero():
-    generos_medias.plot(figsize=(10,6), x='Genre', y='Vendas Médias (Milhões)', kind='bar', color='cyan')
+    generos_medias.plot(figsize=(10,6), x='Genre', y='Vendas Médias (Milhões)', kind='bar', color='#00BFFF')
+    plt.xticks(rotation=45, ha='right') 
     plt.title("Vendas Médias por Gênero")
     plt.xlabel("Gênero")
     plt.ylabel("Média de Vendas (milhões)")
     plt.show()
 
 def vendas_por_decada():
-    decadas.plot(figsize=(10,6), x='Decada', y='Vendas Totais (Milhões)', kind='bar', color='brown')
+    decadas.plot(figsize=(10,6), x='Decada', y='Vendas Totais (Milhões)', kind='bar', color='#00FF00')
+    plt.xticks(rotation=45, ha='right') 
     plt.title("Vendas Totais por Década")
     plt.xlabel("Década")
     plt.ylabel("Vendas Globais (milhões)")
     plt.show()
 
 def vendas_por_regiao():
-    regioes.plot(figsize=(8,6), x='Região', y='Vendas (Milhões)', kind='bar', color='teal')
+    regioes.plot(figsize=(8,6), x='Região', y='Vendas (Milhões)', kind='bar', color='#FF0000')
+    plt.xticks(rotation=45, ha='right') 
     plt.title("Vendas Totais por Região")
     plt.xlabel("Região")
     plt.ylabel("Vendas (milhões)")
@@ -64,24 +73,29 @@ def vendas_por_regiao():
 
     
 def jogos_ano():
-    jogos_por_ano.plot(figsize=(8,6), x='Year', y='Número de Jogos', kind='bar', color='teal')
+    jogos_por_ano.plot(figsize=(8,6), x='Year', y='Número de Jogos', kind='bar', color='#00FFFF')
+    plt.xticks(rotation=45, ha='right') 
     plt.title("Jogos por Ano")
     plt.xlabel("Anos")
     plt.ylabel("Quantidade Jogos")
     plt.show()
 
 def jogos_decada():
-    jogos_por_decada.plot(figsize=(8,6), x='Decada', y='Número de Jogos', kind='bar', color='teal')
+    jogos_por_decada.plot(figsize=(8,6), x='Decada', y='Número de Jogos', kind='bar', color='#FFCC00')
+    plt.xticks(rotation=45, ha='right') 
     plt.title("Jogos por Década")
     plt.xlabel("Décadas")
     plt.ylabel("Quantidade Jogos")
     plt.show()
 
 def top3_mais_lucrativos():
-    top3_generos_mais_lucrativos.plot(figsize=(8,6), x='Genre', y='Global_Sales', kind='bar', color='teal')
+    top3_generos_mais_lucrativos.plot(figsize=(8,6), x='Genre', y='Global_Sales', kind='bar', color='#FF66FF')
+    plt.xticks(rotation=45, ha='right') 
     plt.title("Top 3 Gêneros Mais Lucrativos")
     plt.xlabel("Gêneros")
     plt.ylabel("Vendas")
+
+
     plt.show()
 
 # Carregar bases de dados
@@ -100,44 +114,37 @@ top3_generos_mais_lucrativos = pd.read_csv('top3_generos_mais_lucrativos.csv')
 # Interface
 windows = tk.Tk()
 windows.geometry('400x600')
+windows.configure(bg='#F0F0F0') 
 windows.title("📊 Análises de Vendas de Jogos")
 
-titulo = tk.Label(windows, text="Dashboard de Vendas", font=("Arial", 14, "bold"))
+titulo = tk.Label(windows, text="Dashboard de Vendas", 
+                  bg='#F0F0F0', 
+                  fg='#006600',
+                  font=("Arial", 20, "bold"))
 titulo.pack(pady=10)
 
-# Botões
-botaotop10 = tk.Button(windows, text="Top 10 de Vendas Globais", width=40, command=top10_vendas_globais)
-botaotop10.pack(pady=5)
+def create_styled_button(text, command):
+    btn = tk.Button(windows, text=text, command=command)
+    btn.configure(
+        width=35, height=2, 
+        bg='#333333', fg='#FFFFFF', 
+        font=('Verdana', 10, 'bold'), 
+        relief=tk.RAISED, bd=4, 
+        activebackground='#00FF00',
+        activeforeground='#000000'
+    )
+    btn.pack(pady=5, padx=20) 
 
-botaotop10negative = tk.Button(windows, text="Top 10 Menores Vendas Globais", width=40, command=top10_menores_vendas_globais)
-botaotop10negative.pack(pady=5)
-
-botaotop5empresas = tk.Button(windows, text="Top 5 Empresas com Maiores Vendas", width=40, command=top5_empresas)
-botaotop5empresas.pack(pady=5)
-
-botao_top10_anos = tk.Button(windows, text="Top 10 Anos com Maiores Vendas", width=40, command=top10_anos_vendas)
-botao_top10_anos.pack(pady=5)
-
-botao_genero = tk.Button(windows, text="Vendas Totais por Gênero", width=40, command=vendas_por_genero)
-botao_genero.pack(pady=5)
-
-botao_genero_medias = tk.Button(windows, text="Vendas Médias por Gênero", width=40, command=vendas_medias_por_genero)
-botao_genero_medias.pack(pady=5)
-
-botao_decada = tk.Button(windows, text="Vendas por Década", width=40, command=vendas_por_decada)
-botao_decada.pack(pady=5)
-
-botao_regiao = tk.Button(windows, text="Vendas por Região", width=40, command=vendas_por_regiao)
-botao_regiao.pack(pady=5)
-
-botao_jogos_ano = tk.Button(windows, text="Jogos por Ano", width=40, command=jogos_ano)
-botao_jogos_ano.pack(pady=5)
-
-botao_jogos_decada = tk.Button(windows, text="Jogos por Década", width=40, command=jogos_decada)
-botao_jogos_decada.pack(pady=5)
-
-botao_top3_generos = tk.Button(windows, text="Top 3 Generos Mais Lucrativos.csv", width=40, command=top3_mais_lucrativos)
-botao_top3_generos.pack(pady=5)
+create_styled_button("Top 10 de Vendas Globais", command=top10_vendas_globais)
+create_styled_button("Top 10 Menores Vendas Globais", command=top10_menores_vendas_globais) 
+create_styled_button("Top 5 Empresas com Maiores Vendas", command=top5_empresas) 
+create_styled_button("Top 10 Anos com Maiores Vendas", command=top10_anos_vendas)
+create_styled_button("Vendas Totais por Gênero", command=vendas_por_genero)
+create_styled_button("Vendas Médias por Gênero", command=vendas_medias_por_genero)
+create_styled_button("Vendas por Década", command=vendas_por_decada)
+create_styled_button("Vendas por Região", command=vendas_por_regiao)
+create_styled_button("Top 3 Gêneros Mais Lucrativos", command=top3_mais_lucrativos)
 
 # Executar Interface
 windows.mainloop()
+
