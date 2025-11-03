@@ -65,3 +65,4 @@ vendas_por_decada = df_clean.groupby('Decada')['Global_Sales'].sum()
 for decada in sorted(df_clean['Decada'].unique()):
     dados_decada = df_clean[df_clean['Decada'] == decada]
     genero_mais_popular = dados_decada.groupby('Genre')['Global_Sales'].sum().idxmax()
+
