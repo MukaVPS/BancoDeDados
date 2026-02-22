@@ -27,7 +27,7 @@ Relatório do Projeto: [GoogleDocs](https://docs.google.com/document/d/191dB7rl4
 
 
 ```ruby
-   puts "Projeto em construção. Tenha paciencia, amigo(a)!"
+   puts "Principais usos do python: Criação de arquivos e exposição de resultados"
 ```
 
 </details>
